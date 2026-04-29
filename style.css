@@ -1,0 +1,262 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('fundo-geometrico-escuro-com-espaco-de-copia_24972-1816.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(50, 1, 1, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-contact {
+    text-decoration: none;
+    color: #f2f0f0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background: #540102;
+    transition: all 0.3s ease;
+}
+
+.btn-contact.secondary {
+    background: transparent;
+    border: 1px solid #bd0000;
+}
+
+.btn-contact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.foto1 img {
+    border-radius: 20px;
+    width: 350px;
+    height: auto;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 30px rgba(156, 0, 0, 0.5);
+    margin-bottom: 20px;
+    transition: all 0.8s ease-in-out;
+
+}
+
+.foto1 img:hover {
+    transform: scale(1.0);
+    border-color: #5f0101;
+    box-shadow: 0 0 15px #a3a3a3,
+        0 0 30px #7e0101,
+        0 0 60px rgba(112, 0, 0, 0.8);
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0 100px 0;
+    padding: 0 20px;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #00d2ff;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    background: #540102;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    background: #7a0203;
+    box-shadow: 0 5px 15px rgba(84, 1, 2, 0.4);
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+.login-footer a {
+    color: #00d2ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 140px;
+
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .foto img {
+        width: 280px;
+
+    }
+
+    p {
+        font-size: 1.1rem;
+        margin: 0 15px;
+        padding: 15px;
+    }
+
+    .contact-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-contact {
+        padding: 10px 20px;
+        flex: 1;
+        text-align: center;
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .foto img {
+        width: 240px;
+    }
+
+    .contact-buttons {
+        gap: 10px;
+    }
+
+    .btn-contact {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+
+    .login-card {
+        padding: 25px;
+    }
+
+    .login-card h2 {
+        font-size: 1.5rem;
+    }
+}
